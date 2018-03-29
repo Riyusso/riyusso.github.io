@@ -10,24 +10,24 @@ body{
 	background:#fff;
  }
 .btn {
--webkit-border-radius: 7;
--moz-border-radius: 7;
-border-radius: 6px;
-font-family: Arial;
-color: #ffffff;
-font-size: 16px;
-background: rgb(46, 146, 177);
-padding: 6px 20px 6px 20px;
-border: solid #36789e 1px;
-text-decoration: none;
+	-webkit-border-radius: 7;
+	-moz-border-radius: 7;
+	border-radius: 6px;
+	font-family: Arial;
+	color: #ffffff;
+	font-size: 16px;
+	background: rgb(46, 146, 177);
+	padding: 6px 20px 6px 20px;
+	border: solid #36789e 1px;
+	text-decoration: none;
 }
 .btn.dwn{
 	margin-top: 30px;
 }
 .btn:hover {
-background: #4d83a5;
-color:#f6f6f6;
-text-decoration: none;
+	background: #4d83a5;
+	color:#f6f6f6;
+	text-decoration: none;
 }
 body a{
 	transition:0.5s all;
@@ -109,6 +109,7 @@ nav a:focus {
 	top: 100%;
 	content: attr(data-hover);
 	font-weight: 600;
+	font-size: 1em;
 	-webkit-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
 	transform: translate3d(0,0,0);
