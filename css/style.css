@@ -112,7 +112,7 @@ nav a:focus {
 	font-size: 1em;
 	-webkit-transform: translate3d(0,0,0);
 	-moz-transform: translate3d(0,0,0);
-	transform: translate3d(0,0,0);
+	transform: translate3d(-3,0,0);
 }
 
 .cl-effect-5 a:hover span,
