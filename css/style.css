@@ -439,7 +439,7 @@ font-family: 'Source Code Pro';
 .course_demo{
 	padding: 3% 3% 3% 3%;
 }
-.nbs-flexisel-item img {
+.nbs-flexisel-item video {
 	  width: 55%;
 	  cursor: pointer;
 	  position: relative;
@@ -449,6 +449,17 @@ font-family: 'Source Code Pro';
 	  -webkit-border-radius: 7px;
 	-moz-border-radius: 7px;
 	-o-border-radius: 7px;
+}
+.nbs-flexisel-item img {
+	width: 55%;
+	cursor: pointer;
+	position: relative;
+	margin-bottom: 0px;
+	display:inline;
+	border-radius: 7px;
+	-webkit-border-radius: 7px;
+  -moz-border-radius: 7px;
+  -o-border-radius: 7px;
 }
 /*** Navigation ***/
 .nbs-flexisel-nav-left,
