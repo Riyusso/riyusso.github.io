@@ -117,7 +117,6 @@
 				var childSet = object.children();
 				var leftArrow = listParent.find($(".nbs-flexisel-nav-left"));
 				var rightArrow = listParent.find($(".nbs-flexisel-nav-right"));
-				childSet.first().find("video").addClass("active");
 
 				$(window).on("resize", function(event){
 					
