@@ -118,7 +118,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					<li>
 						<div class="client">
 							<a href="images/giff2.gif" >
-								<video loop="loop">
+								<video autoplay="true" loop="loop">
 									<source src="images/giff2.mp4" type="video/mp4" />
 									<img src="images/giff2.gif" alt="" />
 								</video>
@@ -143,7 +143,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 					$(document).ready(function() {
 						// Get media - with autoplay disabled (audio or video)
 						var media = $('video').filter(".active");
-						var tolerancePixel = 130;
+						var tolerancePixel = 220;
 		
 						function checkMedia(){
 							// Get current browser top and bottom
