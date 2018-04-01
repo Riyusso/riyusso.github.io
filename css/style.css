@@ -395,9 +395,6 @@ font-weight: 400;
 text-align:center;
 font-family: 'Source Code Pro';
 }
-/* --#flexiselDemo3 {
-	display: none;
-}-- */
 .nbs-flexisel-container {
 	position: relative;
 	max-width: 100%;

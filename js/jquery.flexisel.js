@@ -93,8 +93,8 @@
 				
    			 	object.addClass("nbs-flexisel-ul");
    			 	object.wrap("<div class='nbs-flexisel-container'><div class='nbs-flexisel-inner'></div></div>");
-   			 	object.find("li").addClass("nbs-flexisel-item");
- 
+				object.find("li").addClass("nbs-flexisel-item");
+
    			 	if(settings.setMaxWidthAndHeight) {
 	   			 	var baseWidth = $(".nbs-flexisel-item > img").width();
 	   			 	var baseHeight = $(".nbs-flexisel-item > img").height();
@@ -117,7 +117,8 @@
 				var childSet = object.children();
 				var leftArrow = listParent.find($(".nbs-flexisel-nav-left"));
 				var rightArrow = listParent.find($(".nbs-flexisel-nav-right"));
-				
+				childSet.first().find("video").addClass("active");
+
 				$(window).on("resize", function(event){
 					
 					methods.setResponsiveEvents();
@@ -204,7 +205,7 @@
 					itemsWidth = (innerWidth)/itemsVisible;
 					
 					var childSet = object.children();
-					
+
 					object.animate({
 							'left' : "+=" + itemsWidth
 						},
@@ -212,8 +213,16 @@
 							queue:false, 
 							duration:settings.animationSpeed,
 							easing: "linear",
-							complete: function() {  
+							complete: function() {
+								$(".active").each(function() {
+									$(this).removeClass("active");
+									$(this).get(0).pause();
+								});
 								childSet.last().insertBefore(childSet.first()); // Get the first list item and put it after the last list item (that's how the infinite effects is made)   								
+								childSet.first().find("video").addClass("active");
+								$(".active").each(function() {
+									$(this).get(0).play();
+								});
 								methods.adjustScroll();
 								canNavigate = true; 
 							}
@@ -246,7 +255,15 @@
 							duration:settings.animationSpeed,
 							easing: "linear",
 							complete: function() {  
+								$(".active").each(function() {
+									$(this).get(0).pause();
+									$(this).removeClass("active");
+								});
 								childSet.first().insertAfter(childSet.last()); // Get the first list item and put it after the last list item (that's how the infinite effects is made)   
+								childSet.eq(2).find("video").addClass("active");
+								$(".active").each(function() {
+									$(this).get(0).play();
+								});
 								methods.adjustScroll();
 								canNavigate = true; 
 							}
