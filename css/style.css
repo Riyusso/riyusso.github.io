@@ -233,31 +233,30 @@ font-family: 'Source Code Pro';
 	.offs{
 		padding-left: 72px;
 	}
-	.centerblock{
-		margin: 0 auto;
-		width: 100px; 
-		display: inline-block;
-	}
 	.creators-grid img{
 		float: left;
 	}
 	.creators-grid h3{
-	color:#fff;
-	font-family:bahnschrift;
-	margin-top:0.1em;
-	font-weight:500;
-	font-size:1.7em;
-	overflow: hidden;
-    white-space: nowrap;
+		color:#fff;
+		margin-top:0.1em;
+		font-family:bahnschrift;
+		font-weight:500;
+		font-size:1.7em;
+		overflow: hidden;
+		white-space: nowrap;
+		padding-left: 15px;
 	}
 	.creators-grid h4{
-	color:#fff;
-	font-size:1.1em;
-	margin-top:0.4em;
-	word-spacing:2px;
-	letter-spacing:1.2px;
-	font-family:bahnschrift;
-	word-spacing:1.6px;
+		color:#fff;
+		font-size:1.1em;
+		margin-top:0.4em;
+		word-spacing:2px;
+		letter-spacing:1.2px;
+		font-family:bahnschrift;
+		word-spacing:1.6px;
+		overflow: hidden;
+		white-space: nowrap;
+		padding-left: 15px;
 	}
 /*--extensions--*/
 .extensions{
@@ -359,6 +358,9 @@ ul.callbacks_tabs.callbacks1_tabs {
 }
 .works.main{
 	text-align: center;
+}
+.works.main img{
+	padding-right: 20px;
 }
 .section.group {
 	margin:0% 0 0% 0;
